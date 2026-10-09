@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Halil İbrahim Arslan · Senior Java Engineer</title>
+<meta name="description" content="Halil İbrahim Arslan, Senior Java Engineer. Java ve Spring Boot ile DDD, hexagonal mimari ve RabbitMQ tabanlı backend sistemleri.">
+<meta property="og:title" content="Halil İbrahim Arslan, Senior Java Engineer">
+<meta property="og:description" content="Java ve Spring Boot ile backend sistemleri: DDD, hexagonal mimari, olay tabanlı entegrasyon, Testcontainers.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">İçeriğe geç</a>
+
+<header class="nav">
+  <a class="brand" href="#top" aria-label="Halil İbrahim Arslan">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path class="o" d="M7 2.5h10l5.2 9.5L17 21.5H7L1.8 12z"/><path class="i" d="M9.5 7h5l2.6 5-2.6 5h-5L6.9 12z"/></svg>
+    <span>Halil İbrahim Arslan</span>
+  </a>
+  <nav aria-label="Ana menü">
+    <a href="#projects" data-i18n="nav.projects">Projeler</a>
+    <a href="#about" data-i18n="nav.about">Hakkımda</a>
+    <a href="#stack" data-i18n="nav.stack">Yetenekler</a>
+    <a href="#contact" data-i18n="nav.contact">İletişim</a>
+    <button class="lang" id="lang" type="button" aria-label="Switch to English">EN</button>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="hero-text">
+      <h1>Halil İbrahim Arslan</h1>
+      <p class="role">Senior Java Engineer</p>
+      <p class="lead" data-i18n="hero.lead">Java ve Spring Boot ile backend sistemleri tasarlıyor ve geliştiriyorum: DDD ve hexagonal mimari, RabbitMQ ile güvenilir olay tabanlı entegrasyon, gerçek veritabanı ve kuyruğa karşı koşan testler. Gerektiğinde Next.js ve React ile ön yüzü de üstleniyorum.</p>
+      <ul class="hero-stack" aria-label="Ana teknolojiler">
+        <li>Java 21 / 25</li><li>Spring Boot</li><li>Spring Security</li><li>Spring Data JPA</li><li>Hibernate</li><li>RabbitMQ</li><li>PostgreSQL</li><li>Testcontainers</li>
+      </ul>
+      <div class="actions">
+        <a class="btn primary" href="#projects" data-i18n="hero.cta1">Projelerimi gör</a>
+        <a class="btn" href="#contact" data-i18n="hero.cta2">İletişime geç</a>
+      </div>
+    </div>
+    <div class="viz-wrap" aria-hidden="true">
+      <canvas id="hero-viz" class="viz"></canvas>
+    </div>
+  </section>
+
+  <section class="section" id="projects" aria-labelledby="projects-h">
+    <header class="section-head">
+      <h2 id="projects-h" data-i18n="projects.h">Projeler</h2>
+      <p data-i18n="projects.intro">Kendi geliştirdiğim projelerden bir seçki. Önce Java, sonra full-stack tarafı. Hepsinin kodu GitHub'da.</p>
+    </header>
+
+    <article class="feature flagship">
+      <div class="feature-text">
+        <span class="kind" data-i18n="w.kind">Java, uçtan uca depo yönetim sistemi</span>
+        <h3><a href="https://github.com/HalibrahimArslan/open-wms">Open WMS</a></h3>
+        <p data-i18n="w.desc">Mal kabulden adreslemeye, toplamadan sayım ve sevkiyata kadar depo operasyonlarını yöneten, ERP'den bağımsız bir depo yönetim sistemi. Spring Boot backend ve React arayüzü ayrı depolarda; Docker Compose ile tek komutta ayağa kalkıyor.</p>
+        <ul class="points">
+          <li data-i18n="w.p1">ERP'den bağımsız çekirdek: Mikro ve Uyumsoft entegrasyonları tek bir ErpOrderGateway sözleşmesinin adaptörleri. Yeni bir ERP için bu arayüzü uygulayan bir servis yazmak yetiyor; ERP bağlı değilse sistem yerel veriyle çalışıyor.</li>
+          <li data-i18n="w.p2">Benzersiz barkodun yaşam döngüsü Spring Statemachine ile, toplama adresi seçimi Strategy deseniyle yönetiliyor.</li>
+          <li data-i18n="w.p3">Hibernate Envers ile denetim kaydı, Spring Security ve JWT ile yetkilendirme, JCache ile önbellek, Liquibase ile şema yönetimi.</li>
+          <li data-i18n="w.p4">Entegrasyon testleri Testcontainers üzerinde PostgreSQL 18 ile koşuyor; API sözleşme testleri, arayüzün kullandığı uçların yanıtlarını kayıtlı snapshot'larla karşılaştırıp kırılmaları yakalıyor.</li>
+          <li data-i18n="w.p5">Canlı ortam için Actuator ve Prometheus metrikleri, Sentry hata takibi, yapılandırılmış loglar, MinIO dosya deposu, WebSocket bildirimleri ve gömülü Metabase raporları.</li>
+        </ul>
+        <ul class="tags" aria-label="Stack">
+          <li>Java 25</li><li>Spring Boot 4</li><li>Spring Security</li><li>Spring Data JPA</li><li>Hibernate Envers</li><li>Spring Statemachine</li><li>Liquibase</li><li>PostgreSQL</li><li>MapStruct</li><li>Testcontainers</li><li>React</li><li>MUI</li><li>Docker</li>
+        </ul>
+        <p class="repo-links"><a href="https://github.com/HalibrahimArslan/open-wms" data-i18n="w.l1">Backend deposu</a><a href="https://github.com/HalibrahimArslan/open-wms-app" data-i18n="w.l2">Arayüz deposu</a></p>
+      </div>
+      <figure class="diagram">
+        <pre class="code tree" tabindex="0" aria-label="Open WMS ERP adaptör yapısı"><code><span class="t">ErpOrderResource</span>       <span class="c" data-i18n="w.d1">tek REST ucu</span>
+   │
+   ▼
+<span class="t">ErpGatewayRouter</span>       <span class="c" data-i18n="w.d2">şirketin ERP tipine göre seçer</span>
+   │
+   ▼
+<span class="t">ErpGatewayRegistry</span>     <span class="c" data-i18n="w.d3">adaptörleri açılışta bulur</span>
+   ├─ <span class="f">LocalOrderGateway</span>      LOCAL
+   ├─ <span class="f">MikroServices</span>          MIKRO_V16, MIKRO_V15
+   └─ <span class="f">UyumsoftOrderGateway</span>   UYUMSOFT</code></pre>
+        <figcaption data-i18n="w.cap">Hangi ERP bağlı olursa olsun adaptörler aynı kanonik DTO'ları döndürüyor; arayüzün gördüğü yanıt hiç değişmiyor.</figcaption>
+      </figure>
+    </article>
+
+    <article class="feature">
+      <div class="feature-text">
+        <span class="kind" data-i18n="q.kind">Java, olay tabanlı iki servis</span>
+        <h3><a href="https://github.com/HalibrahimArslan/queue-app">rabbit-lab</a></h3>
+        <p data-i18n="q.desc">Backoffice ile e-ticaret vitrini arasında ürün ve stok senkronizasyonu yapan iki Spring Boot servisi. Mesajlaşmanın zor kısımlarını gerçek altyapıyla çözüyor.</p>
+        <ul class="points">
+          <li data-i18n="q.p1">Transactional outbox: durum değişikliği ve olay aynı transaction'da yazılıyor; relay FOR UPDATE SKIP LOCKED ile birden fazla instance'ta çakışmadan yayınlıyor, publisher confirm'leri paralel bekliyor.</li>
+          <li data-i18n="q.p2">At-least-once teslim: tüketici tarafında idempotent işleme ve versiyon kontrolü sayesinde tekrar eden ya da sırası bozulan mesajlar yine doğru sonuç veriyor.</li>
+          <li data-i18n="q.p3">Mimari kurallar ArchUnit testleriyle korunuyor; vitrin servisi hexagonal mimariden onion mimarisine adım adım taşındı.</li>
+          <li data-i18n="q.p4">Kabul senaryoları Cucumber ile, entegrasyon testleri Testcontainers ile gerçek RabbitMQ ve PostgreSQL'e karşı koşuyor.</li>
+        </ul>
+        <ul class="tags" aria-label="Stack">
+          <li>Java 21</li><li>Spring Boot 4.1</li><li>Spring AMQP</li><li>RabbitMQ</li><li>PostgreSQL</li><li>Flyway</li><li>ArchUnit</li><li>Cucumber</li><li>Testcontainers</li><li>Maven multi-module</li>
+        </ul>
+      </div>
+      <pre class="code" tabindex="0" aria-label="rabbit-lab örnek kod: stok sayımı use case'i"><code><span class="k">public final class</span> <span class="t">InventoryService</span> <span class="k">implements</span> <span class="t">CountStockUseCase</span> {
+
+    <span class="a">@Override</span>
+    <span class="k">public void</span> <span class="f">count</span>(<span class="t">CountStockCommand</span> command) {
+        transaction.<span class="f">execute</span>(() -&gt; {
+            <span class="t">Inventory</span> inventory = inventories
+                    .<span class="f">findBySku</span>(command.<span class="f">sku</span>())
+                    .<span class="f">orElseThrow</span>(() -&gt;
+                        <span class="k">new</span> <span class="t">ProductNotFoundException</span>(command.<span class="f">sku</span>()));
+
+            inventory.<span class="f">count</span>(command.<span class="f">quantity</span>());
+            <span class="k">var</span> events = inventory.<span class="f">pullEvents</span>();
+            <span class="k">if</span> (events.<span class="f">isEmpty</span>()) <span class="k">return</span>;
+
+            inventories.<span class="f">save</span>(inventory);
+            outbox.<span class="f">append</span>(events);  <span class="c" data-i18n="q.codec">// aynı transaction</span>
+        });
+    }
+}</code></pre>
+    </article>
+
+    <article class="feature">
+      <div class="feature-text">
+        <span class="kind" data-i18n="h.kind">Java, hexagonal mimari</span>
+        <h3><a href="https://github.com/HalibrahimArslan/hexagonal-101">hexagonal-101</a></h3>
+        <p data-i18n="h.desc">Küçük bir sipariş servisi üzerinden hexagonal mimariyi uygulayan Spring Boot projesi. Her tasarım kararı README'de gerekçesiyle yazılı.</p>
+        <ul class="points">
+          <li data-i18n="h.p1">Domain JPA'dan ayrı ve değişmez; geçersiz bir sipariş nesnesi oluşturulamıyor, dönüşümü persistence adapter'ı yapıyor.</li>
+          <li data-i18n="h.p2">Application katmanı Spring'e bağımlı değil; use case testleri Spring context ve Mockito olmadan koşuyor.</li>
+          <li data-i18n="h.p3">Persistable ile kayıt başına atılan gereksiz SELECT kaldırıldı; SQL sayısı testle doğrulanıyor.</li>
+          <li data-i18n="h.p4">Her katmanın kendi testi var: domain, use case, @WebMvcTest, @DataJpaTest ve @SpringBootTest. Toplam 33 test.</li>
+        </ul>
+        <ul class="tags" aria-label="Stack">
+          <li>Java 17</li><li>Spring Boot 4.1</li><li>Spring Data JPA</li><li>H2</li><li>JUnit 5</li><li>PlantUML</li>
+        </ul>
+      </div>
+      <pre class="code tree" tabindex="0" aria-label="hexagonal-101 paket yapısı"><code><span class="t">order</span>
+├─ <span class="f">domain</span>               <span class="c">Order, InvalidOrderException</span>
+├─ <span class="f">application</span>
+│  ├─ <span class="f">port.in</span>           <span class="c">CreateOrderUseCase, GetOrderUseCase</span>
+│  ├─ <span class="f">port.out</span>          <span class="c">SaveOrderPort, LoadOrderPort</span>
+│  └─ <span class="f">service</span>           <span class="c">CreateOrderService, GetOrderService</span>
+├─ <span class="f">adapter</span>
+│  ├─ <span class="f">in.web</span>            <span class="c">OrderController</span>
+│  └─ <span class="f">out.persistence</span>   <span class="c">OrderPersistenceAdapter, OrderJpaEntity</span>
+└─ <span class="f">config</span>               <span class="c">BeanConfig</span></code></pre>
+    </article>
+
+    <h3 class="more-h" data-i18n="projects.java">Diğer Java çalışmaları</h3>
+    <ul class="rows">
+      <li>
+        <a href="https://github.com/HalibrahimArslan/spring-retry-recovery">spring-retry-recovery</a>
+        <p data-i18n="sr.desc">Spring Retry ile yeniden deneme ve recovery senaryoları: hangi hatada tekrar deneneceği, üstel backoff ve deneme sınırı, sonunda @Recover ile kontrollü geri dönüş.</p>
+        <span class="stack">Java 21, Spring Boot, Spring Retry, Spring AOP</span>
+      </li>
+      <li>
+        <a href="https://github.com/HalibrahimArslan/graphql-spring-boot">graphql-spring-boot</a>
+        <p data-i18n="g.desc">Spring for GraphQL ile şema öncelikli bir API; JPA varlıkları, ilişkiler ve özel scalar tipler.</p>
+        <span class="stack">Java 17, Spring Boot, Spring for GraphQL, Spring Data JPA</span>
+      </li>
+    </ul>
+
+    <h3 class="more-h ts-h" data-i18n="projects.ts">Full-stack ve TypeScript</h3>
+    <article class="feature compact">
+      <div class="feature-text">
+        <span class="kind" data-i18n="rm.kind">Web uygulaması</span>
+        <h3><a href="https://github.com/HalibrahimArslan/Release-Manager">Release Manager</a></h3>
+        <p data-i18n="rm.desc">Birleşmiş GitLab ve GitHub merge request'lerini, müşterinin gerçekten bakabileceği ekran görüntülü bir sürüm dokümanına çeviriyor. Playwright ile test ortamındaki ekranları görüntülüyor, hangi değişikliğin hangi ekranı etkilediğini kurallarla buluyor; sonucu web arayüzünde, sunum modunda, Markdown ve PDF olarak açıyor.</p>
+        <ul class="tags" aria-label="Stack">
+          <li>NestJS</li><li>Prisma</li><li>PostgreSQL</li><li>React</li><li>MUI</li><li>Playwright</li><li>pnpm monorepo</li>
+        </ul>
+      </div>
+      <figure class="shot">
+        <img src="assets/release-manager.webp" width="1600" height="1024" loading="lazy" alt="Release Manager sürüm dokümanı ekranı; değişen alanlar turuncu kutularla işaretli" data-i18n-alt="rm.alt">
+        <figcaption data-i18n="rm.cap">Ekran görüntüsü kurgusal bir demo projesinden.</figcaption>
+      </figure>
+    </article>
+    <ul class="rows">
+      <li>
+        <a href="https://github.com/HalibrahimArslan/prisma-audit">prisma-audit</a>
+        <p data-i18n="pa.desc">Hibernate Envers'in yaklaşımını Prisma'ya taşıyan açık kaynak npm paketi: işaretlenen modellerin her değişikliği merkezi bir revizyon altında geçmiş tablosuna yazılıyor, istenen revizyona dönülüp sürümler karşılaştırılabiliyor. PostgreSQL, MySQL ve SQLite üzerinde CI'da test ediliyor.</p>
+        <span class="stack">TypeScript, Prisma 7, Node.js CLI</span>
+      </li>
+      <li>
+        <a href="https://github.com/HalibrahimArslan/my-slider">my-slider</a>
+        <p data-i18n="s.desc">Site içinde duyuru yapmak ve kısa sunumlar hazırlamak için hafif bir PowerPoint alternatifi.</p>
+        <span class="stack">Next.js, Tailwind, Docker</span>
+      </li>
+      <li>
+        <a href="https://github.com/HalibrahimArslan/Route-Optimization">path-optimization</a>
+        <p data-i18n="r.desc">Dijkstra, A*, Bellman-Ford ve gezgin satıcı problemi için 2-opt, Or-opt ve Held-Karp uygulamaları; sonuçlar notebook'larda görselleştirilmiş.</p>
+        <span class="stack">Python, Jupyter, pytest, matplotlib</span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="section about" id="about" aria-labelledby="about-h">
+    <div class="about-text">
+      <h2 id="about-h" data-i18n="about.h">Hakkımda</h2>
+      <p data-i18n="about.p1">Java ve Spring Boot ekosisteminde backend geliştiren bir yazılım mühendisiyim. Domain modelini framework'ten bağımsız tutmayı, servisler arası iletişimi hata durumlarını da düşünerek kurmayı ve davranışı testlerle belgelemeyi önemsiyorum. En kapsamlı işim olan Open WMS'te bir depo yönetim sistemini veri modelinden canlı ortam izlemesine kadar uçtan uca geliştirdim.</p>
+      <p data-i18n="about.p2">Ön yüzde Next.js ve React, TypeScript tarafında NestJS ve Prisma ile de çalışıyorum. Bu sayede bir özelliği veritabanından arayüze kadar tek başıma taşıyabiliyor, ekipte backend ile frontend arasında köprü olabiliyorum.</p>
+    </div>
+    <div class="offer">
+      <h3 data-i18n="of.h">Ekibe kattıklarım</h3>
+      <ul class="offer-list">
+        <li style="--c:#ffd166"><strong data-i18n="o1.h">Backend mimarisi</strong><span data-i18n="o1.p">DDD, hexagonal ve onion mimariyle bakımı kolay, kuralları testlerle korunan servisler.</span></li>
+        <li style="--c:#f2557f"><strong data-i18n="o2.h">Güvenilir entegrasyon</strong><span data-i18n="o2.p">RabbitMQ, transactional outbox, idempotent tüketiciler, retry ve backoff stratejileri.</span></li>
+        <li style="--c:#8a6cff"><strong data-i18n="o3.h">Test disiplini</strong><span data-i18n="o3.p">Unit ve slice testleri, Testcontainers ile entegrasyon, Cucumber ile kabul testleri, ArchUnit ile mimari kurallar.</span></li>
+        <li style="--c:#4f8dff"><strong data-i18n="o4.h">Uçtan uca sahiplik</strong><span data-i18n="o4.p">Gerektiğinde arayüzü, Docker, izleme ve dağıtım tarafını da üstlenerek bir özelliği canlıya kadar götürmek.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="stack" aria-labelledby="stack-h">
+    <header class="section-head">
+      <h2 id="stack-h" data-i18n="stack.h">Yetenekler</h2>
+    </header>
+    <dl class="stack-grid">
+      <div class="primary-skill"><dt data-i18n="stack.java">Java ve Spring</dt><dd>Java 17 / 21 / 25, Spring Boot, Spring Security, Spring Data JPA, Hibernate, Hibernate Envers, Spring AMQP, Spring Statemachine, Spring Retry, Spring for GraphQL, MapStruct</dd></div>
+      <div><dt data-i18n="stack.data">Veri ve mesajlaşma</dt><dd>PostgreSQL, MySQL, H2, Liquibase, Flyway, RabbitMQ, MinIO, MongoDB</dd></div>
+      <div><dt data-i18n="stack.test">Test</dt><dd>JUnit 5, Testcontainers, Cucumber, ArchUnit, Playwright</dd></div>
+      <div><dt data-i18n="stack.arch">Mimari</dt><dd data-i18n="stack.archv">DDD, hexagonal, onion, olay tabanlı sistemler, transactional outbox</dd></div>
+      <div><dt data-i18n="stack.tools">Araçlar</dt><dd>Maven, Gradle, Docker, Jib, Prometheus, Sentry, Git, Linux</dd></div>
+      <div><dt data-i18n="stack.front">Frontend ve TypeScript</dt><dd>TypeScript, Next.js, React, NestJS, Prisma</dd></div>
+    </dl>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="contact-h">
+    <div class="contact-inner">
+      <h2 id="contact-h" data-i18n="contact.h">İletişim</h2>
+      <p data-i18n="contact.p">Senior Java pozisyonları için görüşmeye açığım. Ekibinizde bir Java mühendisine ihtiyaç varsa e-postayla ulaşabilirsiniz.</p>
+      <div class="actions">
+        <a class="btn primary big" href="mailto:arslan.halibrahim@gmail.com">arslan.halibrahim@gmail.com</a>
+        <a class="btn" href="https://github.com/HalibrahimArslan">GitHub</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>© 2026 Halil İbrahim Arslan</p>
+</footer>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>
