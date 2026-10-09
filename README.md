@@ -4,6 +4,18 @@
 
 > Full-stack: TypeScript tarafında Next.js & NestJS, JVM tarafında Spring Boot. Veri katmanında Prisma.
 
+### ⭐ [Open WMS](https://github.com/HalibrahimArslan/open-wms): uçtan uca depo yönetim sistemi
+
+Mal kabulden adreslemeye, toplamadan sayım ve sevkiyata kadar depo operasyonlarını yöneten, ERP'den bağımsız bir depo yönetim sistemi. Spring Boot backend ve React arayüzü ayrı depolarda ([backend](https://github.com/HalibrahimArslan/open-wms) · [arayüz](https://github.com/HalibrahimArslan/open-wms-app)); Docker Compose ile tek komutta ayağa kalkıyor.
+
+- **ERP'den bağımsız çekirdek:** Mikro ve Uyumsoft entegrasyonları tek bir `ErpOrderGateway` sözleşmesinin adaptörleri. Yeni bir ERP için bu arayüzü uygulayan bir servis yazmak yetiyor; ERP bağlı değilse sistem yerel veriyle çalışıyor.
+- **İş akışları:** Benzersiz barkodun yaşam döngüsü Spring Statemachine ile, toplama adresi seçimi Strategy deseniyle yönetiliyor.
+- **Altyapı:** Hibernate Envers ile denetim kaydı, Spring Security ve JWT ile yetkilendirme, JCache ile önbellek, Liquibase ile şema yönetimi.
+- **Test:** Testcontainers üzerinde PostgreSQL 18 ile entegrasyon testleri; API sözleşme testleri arayüzün kullandığı uçların yanıtlarını kayıtlı snapshot'larla karşılaştırıyor.
+- **Canlı ortam:** Actuator ve Prometheus metrikleri, Sentry, yapılandırılmış loglar, MinIO, WebSocket bildirimleri, gömülü Metabase raporları.
+
+`Java 25` `Spring Boot 4` `Spring Security` `Spring Data JPA` `Hibernate Envers` `Spring Statemachine` `Liquibase` `PostgreSQL` `MapStruct` `Testcontainers` `React` `MUI` `Docker`
+
 - 🌐 Portfolyo: **[halibrahimarslan.github.io/HalibrahimArslan](https://halibrahimarslan.github.io/HalibrahimArslan/)**
 - 🌍 Türkiye'de yaşıyorum
 - ✉️ Bana ulaşabilirsin: [arslan.halibrahim@gmail.com](mailto:arslan.halibrahim@gmail.com)
@@ -36,6 +48,7 @@
 
 | Proje | Ne yapıyor | Stack |
 | --- | --- | --- |
+| [Open WMS](https://github.com/HalibrahimArslan/open-wms) | ERP'den bağımsız, uçtan uca depo yönetim sistemi ([arayüz](https://github.com/HalibrahimArslan/open-wms-app)) | Java 25, Spring Boot 4, Hibernate Envers, Spring Statemachine, Liquibase, PostgreSQL, React |
 | [Release-Manager](https://github.com/HalibrahimArslan/Release-Manager) | Sürüm yönetimi için API + web arayüzü, pnpm monorepo | NestJS, Prisma, PostgreSQL, React, MUI, Vite, Playwright |
 | [prisma-audit](https://github.com/HalibrahimArslan/prisma-audit) | Prisma için Hibernate Envers tarzı denetim: `*Aud` tabloları, `Revision` kaydı ve `AuditReader` | TypeScript, Prisma, Node.js CLI |
 | [hexagonal-architecture-java](https://github.com/HalibrahimArslan/hexagonal-architecture-java) | Hexagonal (ports & adapters) mimarisi uygulaması | Java, Hibernate, JUnit, ArchUnit, Maven |
