@@ -4,6 +4,7 @@
 
 > Full-stack: TypeScript tarafında Next.js & NestJS, JVM tarafında Spring Boot. Veri katmanında Prisma.
 
+- 🌐 Portfolyo: **[halibrahimarslan.github.io/HalibrahimArslan](https://halibrahimarslan.github.io/HalibrahimArslan/)**
 - 🌍 Türkiye'de yaşıyorum
 - ✉️ Bana ulaşabilirsin: [arslan.halibrahim@gmail.com](mailto:arslan.halibrahim@gmail.com)
 - 🚀 Şu an üzerinde çalıştıklarım: **[Release-Manager](https://github.com/HalibrahimArslan/Release-Manager)** (NestJS + React monorepo) ve **[prisma-audit](https://github.com/HalibrahimArslan/prisma-audit)**
@@ -45,6 +46,7 @@
 
 ## Socials
 
+[![Portfolyo](https://img.shields.io/badge/Portfolyo-4F8DFF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://halibrahimarslan.github.io/HalibrahimArslan/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/HalibrahimArslan)
 [![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:arslan.halibrahim@gmail.com)
 
